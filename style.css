@@ -1,0 +1,124 @@
+ol {
+  list-style: none;
+}
+
+ol li:before {
+  content: "✓";
+  color: rgb(221, 151, 240);
+  padding: 5px;
+}
+
+.box {
+  background-color: white;
+  width: 270px;
+  height: 250px;
+}
+.section {
+  background-color: whitesmoke;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  width: 250px;
+  height: 80vh;
+}
+
+.start {
+  background-color: rgb(170, 66, 236);
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 30px;
+  position: absolute;
+  top: 335px;
+  align-items: center;
+}
+.start2 {
+  background-color: rgb(170, 66, 236);
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 30px;
+  position: absolute;
+  bottom: 139px;
+  align-items: center;
+}
+.gridcontainer2 {
+  display: flex;
+  position: absolute;
+  bottom: 349px;
+}
+.gridcontainer3 {
+  display: flex;
+  position: absolute;
+  top: 158px;
+}
+
+.margin {
+  margin-left: 6px;
+}
+.inline {
+  display: flex;
+  gap: 4px;
+}
+.toggle {
+  --width: 50px;
+  --height: 20px;
+  --border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.toggle__input {
+  display: none;
+}
+.toggle__fill {
+  position: relative;
+  width: 39px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: gray;
+  transition: background 0.2s;
+}
+.toggle__input:checked ~ .toggle__fill {
+  background-color: rgb(170, 66, 236);
+}
+.toggle__fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+.toggle__input:checked ~ .toggle__fill::after {
+  transform: translateX(18px);
+}
+.align {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 60px;
+}
+body {
+  background-color: rgb(221, 151, 240);
+}
